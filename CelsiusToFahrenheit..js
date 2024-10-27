@@ -6,6 +6,8 @@ function temperature(cel) {
 }
 console.log(temperature(5)); // or
 
+//------------------------------------------------
+
 function temperature2(cel2) {
   return (cel2 * 9) / 5 + 32;
 }

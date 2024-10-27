@@ -1,9 +1,3 @@
-// function miletokilo(mile) {
-//   let kilo = mile * 1.60934;
-//   return kilo;
-// }
-// console.log(miletokilo(3));
-
 function countVoual(str) {
   let vowel = "aeiouAEIOU";
   let count = 0;
@@ -14,4 +8,4 @@ function countVoual(str) {
   }
   return count;
 }
-console.log(countVoual("Hello world aeiou"));
+console.log(countVoual("Hello world"));
