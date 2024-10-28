@@ -1,12 +1,3 @@
-// Task-3:
-// Your task is to calculate the total budget required to buy electronics:
-
-//     laptop = 35000 tk
-//     tablet = 15000 tk
-//     mobile = 20000 tk
-// Write a JavaScript function named calculateElectronicsBudget that takes in the number of laptop, tablets, and mobile and returns the total money required.
-//
-
 const phones = [
   { model: "PhoneA", brand: "Iphone", price: 95000 },
   { model: "PhoneB", brand: "Samsung", price: 40000 },
@@ -16,12 +7,15 @@ const phones = [
   { model: "PhoneF", brand: "HTC", price: 48000 },
 ];
 
-function avaragePrce(phones) {
+function averagePrice(phones) {
+  // corrected function name
   let total = 0;
-  for (const avarage of phones) {
-    total = total + avarage.price;
+  for (const phone of phones) {
+    // renamed to 'phone' for clarity
+    total = total + phone.price;
   }
-  const avarage = total / phones.length;
-  return avarage;
+  const average = total / phones.length; // corrected variable name
+  return average;
 }
-console.log(avaragePrce(phones));
+
+console.log(averagePrice(phones)); // Output: 58000
