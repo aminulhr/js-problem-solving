@@ -6,15 +6,29 @@
 
 //
 
-const heights2 = [167, 190, 120, 165, 137];
-
-function heights(tall) {
-  let num = tall[0];
-  for (let height of tall) {
-    if (height < num) {
-      num = height;
+// Find the friend with the smallest name.
+const names = ["rahim", "robin", "rafi", "ron", "rashed"];
+function smallest(word) {
+  let words = [0];
+  for (let small of word) {
+    if (small.length < words.length) {
+      words = small;
     }
   }
-  return num;
+  return words;
 }
-console.log(heights(heights2));
+console.log(smallest(names));
+
+// const names = ["rahim", "robin", "rafi", "ron", "rashed"];
+
+// function smallest(word) {
+//   let words = word[0]; // Start with the first name as the smallest
+//   for (let small of word) {
+//     if (small.length < words.length) {
+//       words = small; // Update if a shorter name is found
+//     }
+//   }
+//   return words;
+// }
+
+// console.log(smallest(names)); // Output: "ron"
